@@ -1,19 +1,43 @@
 .latest {
+  margin-bottom: 220px;
+
+  &__title {
+    margin-bottom: 114px;
+    text-align: center;
+  }
   &__list {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+
+    list-style: none;
   }
 
   &__item {
-    display: grid;
+
+    width: 100%;
 
     &--50-50 {
-      grid-template-columns: 50% 50%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
     }
 
     &--25-75 {
-      grid-template-columns: 25% 75%;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 20px;
     }
   }
 }
 
+.latest-card {
+  display: block;
+  border-radius: 20px;
+
+  &__image {
+    object-fit: cover;
+  }
+
+}

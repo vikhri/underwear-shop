@@ -128,20 +128,22 @@
     </ul>
 
   </section>
-  <section class="latest">
+  <section class="latest wrapper">
     <h2 class="latest__title">Посмотрите наши новинки
     </h2>
     <ul class="latest__list">
       <li class="latest__item--50-50">
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="images/latest-high-panties.png" width="575" height="509" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-high-panties.png" width="575" height="509" alt=""
+                 loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="images/latest-leggins.png" width="575" height="509" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-leggins.png" width="575" height="509" alt=""
+                 loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
@@ -149,13 +151,15 @@
       <li class="latest__item--25-75">
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="images/latest-leggins-black.png" width="377" height="514" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-leggins-black.png" width="377" height="514" alt=""
+                 loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="images/latest-bandage.jpg" width="773" height="514" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-bandage.jpg" width="773" height="514" alt=""
+                 loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
@@ -163,15 +167,18 @@
     </ul>
   </section>
   <aside class="banner banner--coupon">
-    <img class="banner__image" src="images/banners/narrow%20banners/narrow-coupon.jpg" width="" height="" alt="" loading="lazy">
-    <p class="banner__text">Получи Купон со скидкой 500 рублей
-      <wbr>
-      на первый заказ
-    </p>
-    <button class="banner__button button" type="button">Получить купон</button>
+    <div class="banner__inner">
+      <p class="banner__text">Получи Купон со скидкой 500 рублей
+        <wbr>
+        на первый заказ
+      </p>
+      <button class="banner__button button" type="button">Получить купон</button>
+    </div>
+    <img class="banner__image" src="images/banners/narrow%20banners/narrow-coupon.jpg" width="" height="" alt=""
+         loading="lazy">
   </aside>
-  <section class="reviews">
-    <h2 class="reviews__title"></h2>
+  <section class="reviews wrapper">
+    <h2 class="reviews__title">Отзывы наших счастливых покупателей</h2>
     <ul class="reviews__list">
       <li class="reviews__item">
         <div class="review-card">
@@ -186,7 +193,7 @@
       <li class="reviews__item">
         <div class="review-card">
           <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
-            <source  type="">
+            <source type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -196,17 +203,7 @@
       <li class="reviews__item">
         <div class="review-card">
           <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
-            <source  type="">
-          </video>
-          <p class="review-card__text">
-            Анастасия, 35 лет <br> Новосибирск
-          </p>
-        </div>
-      </li>
-      <li class="reviews__item">
-        <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
-            <source  type="">
+            <source type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -233,48 +230,86 @@
           </p>
         </div>
       </li>
-
-
+      <li class="reviews__item">
+        <div class="review-card">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source type="">
+          </video>
+          <p class="review-card__text">
+            Анастасия, 35 лет <br> Новосибирск
+          </p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div class="review-card">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source type="">
+          </video>
+          <p class="review-card__text">
+            Анастасия, 35 лет <br> Новосибирск
+          </p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div class="review-card">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source type="">
+          </video>
+          <p class="review-card__text">
+            Анастасия, 35 лет <br> Новосибирск
+          </p>
+        </div>
+      </li>
     </ul>
     <button class="reviews__button button">Посмотреть еще больше отзывов</button>
   </section>
-  <section class="faq">
+  <section class="faq wrapper">
     <h2 class="faq__title">Нас часто спрашивают</h2>
     <dl class="faq__list">
       <div class="faq__block">
-        <dt class="faq__question">1. Как выбрать размер?</dt>
-        <dd class="faq__answer">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
+        <dt class="faq__question"><p class="faq__question-text"> 1. Как выбрать размер?</p><span
+            class="faq__toggle">+</span></dt>
+        <dd class="faq__answer visually-hidden">По своей сути рыбатекст является альтернативой традиционному lorem
+          ipsum, который
           вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
         </dd>
       </div>
       <div class="faq__block">
-        <dt class="faq__question">1. Как выбрать размер?</dt>
-        <dd class="faq__answer">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
+        <dt class="faq__question"><p class="faq__question-text"> 1. Как выбрать размер?</p><span
+            class="faq__toggle">+</span></dt>
+        <dd class="faq__answer visually-hidden">По своей сути рыбатекст является альтернативой традиционному lorem
+          ipsum, который
           вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
         </dd>
       </div>
       <div class="faq__block">
-        <dt class="faq__question">1. Как выбрать размер?</dt>
-        <dd class="faq__answer">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
+        <dt class="faq__question"><p class="faq__question-text"> 1. Как выбрать размер?</p><span
+            class="faq__toggle">+</span></dt>
+        <dd class="faq__answer visually-hidden">По своей сути рыбатекст является альтернативой традиционному lorem
+          ipsum, который
           вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
         </dd>
       </div>
       <div class="faq__block">
-        <dt class="faq__question">1. Как выбрать размер?</dt>
-        <dd class="faq__answer">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
+        <dt class="faq__question"><p class="faq__question-text"> 1. Как выбрать размер?</p><span
+            class="faq__toggle">+</span></dt>
+        <dd class="faq__answer visually-hidden">По своей сути рыбатекст является альтернативой традиционному lorem
+          ipsum, который
           вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
         </dd>
       </div>
     </dl>
   </section>
   <aside class="banner banner--whatsapp">
-    <img class="banner__image" src="images/banners/narrow%20banners/narrow-whatsapp.jpg" width="" height="" alt="" loading="lazy">
-    <p class="banner__text">Не нашли ответ на свой вопрос?</p>
-    <p class="banner__text--secondary">Задайте его нам в WhatsApp</p>
-    <button class="banner__button button" type="button">Спросить в WhatsAPP</button>
+    <div class="banner__inner"><p class="banner__text">Не нашли ответ на свой вопрос?</p>
+      <p class="banner__text--secondary">Задайте его нам в WhatsApp</p>
+      <button class="banner__button button" type="button">Спросить в WhatsAPP</button>
+    </div>
+    <img class="banner__image" src="images/banners/narrow%20banners/narrow-whatsapp.jpg" width="" height="" alt=""
+         loading="lazy">
   </aside>
 </main>
-<footer class="page__footer footer">
+<footer class="page__footer footer wrapper">
   <nav class="footer__navigation navigation">
     <h2 class="navigation__title">Следите за нашими новинками</h2>
     <ul class="navigation__list">
@@ -289,7 +324,6 @@
       </li>
     </ul>
     <ul class="navigation__socials socials">
-      <li class="socials__list">
       <li class="socials__item">
         <a class="socials__link">
           <img class="socials__icon" src="images/icons/instagram-icon.svg" width="" height="" alt="" loading="lazy">
@@ -308,13 +342,13 @@
     </ul>
   </nav>
   <div class="footer__subscription subscription">
-  <form class="subscription__form" action="" method="post">
-    <label class="subscription__label" for="email">Оставьте адрес своей электронной почты</label>
-    <div class="subscription__input-block">
-    <input class="subscription__input" name="email" type="email" id="email" placeholder="ivanivanov@mail.ru">
-    <button class="subscription__button button" type="submit">Получать новости на email</button>
-    </div>
-  </form>
+    <form class="subscription__form" action="" method="post">
+      <label class="subscription__label" for="email">Оставьте адрес своей электронной почты</label>
+      <div class="subscription__input-block">
+        <input class="subscription__input" name="email" type="email" id="email" placeholder="ivanivanov@mail.ru">
+        <button class="subscription__button button" type="submit">Получать новости на email</button>
+      </div>
+    </form>
   </div>
   <div class="footer__bottom-text">
     <p class="bottom-text__requisites">
@@ -322,11 +356,11 @@
       ОГРН 34894589345
     </p>
     <p class="bottom-text__copyrights">Maya store (C) 2021 Все права защищены</p>
-    <p class="bottom-text__links">
-      <a class="bottom-text__phone" href="tel:88002334455">8 (800) 233-44-55</a>
-      <a class="bottom-text__politics" href="/">Политика конфиденциальности</a>
-    </p>
-  </div>
+    <div class="bottom-text__legal">
+      <p class="bottom-text__phone"><a class="bottom-text__link" href="tel:88002334455">8 (800) 233-44-55</a></p>
+      <p class="bottom-text__politics"><a class="bottom-text__link" href="/">Политика конфиденциальности</a></p>
+      </p>
+    </div>
 </footer>
 </body>
 </html>
