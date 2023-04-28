@@ -1,0 +1,68 @@
+@mixin main-font {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@mixin bold-font {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin light-font {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@mixin fluid-text($font-min, $font-max, $screen-min, $screen-max) {
+  font-size: #{$font-min}px;
+
+  @media (min-width: #{$screen-min}px) {
+    font-size: calc(
+      #{$font-min}px + #{($font-max - $font-min)} * (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min})
+    );
+  }
+  @media (min-width: #{$screen-max}px) {
+    font-size: #{$font-max}px;
+  }
+}
+
+
+.page {
+  @include main-font;
+  @include fluid-text(14, 18, 360, 1920);
+}
+
+h1 {
+  @include light-font;
+  @include fluid-text(48, 24, 360, 1920);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include light-font;
+  @include fluid-text(40, 18, 360, 1920);
+  text-transform: uppercase;
+}
+
+h3 {
+  @include bold-font;
+  @include fluid-text(32, 16, 360, 1920);
+}
+
+h4 {
+  @include bold-font;
+  @include fluid-text(20, 14, 360, 1920);
+}
+
+h5 {
+  @include bold-font;
+  @include fluid-text(18, 14, 360, 1920);
+}
+
+h6 {
+  @include bold-font;
+  @include fluid-text(18, 14, 360, 1920);
+}
