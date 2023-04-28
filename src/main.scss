@@ -1,3 +1,14 @@
-@use "styles/variables.scss";
+@use "styles/helpers/variables.scss";
+@use "styles/helpers/layouts.scss";
 @use "styles/font/fonts.scss";
 @use "styles/font/typo.scss";
+@use "styles/blocks/page";
+@use "styles/blocks/header";
+@use "styles/blocks/navigation";
+@use "styles/blocks/intro";
+@use "styles/blocks/top-alert";
+@use "styles/blocks/categories";
+@use "styles/blocks/latest";
+
+
+@import "normalize.css";

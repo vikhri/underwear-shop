@@ -1,0 +1,24 @@
+.header {
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 33px;
+
+  &__phone {
+    display: flex;
+    flex-direction: row;
+    column-gap: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+

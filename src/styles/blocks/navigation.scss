@@ -1,0 +1,11 @@
+.navigation {
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    align-items: center;
+
+    list-style: none;
+  }
+}

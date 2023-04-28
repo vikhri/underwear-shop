@@ -1,0 +1,19 @@
+.latest {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: grid;
+
+    &--50-50 {
+      grid-template-columns: 50% 50%;
+    }
+
+    &--25-75 {
+      grid-template-columns: 25% 75%;
+    }
+  }
+}
+

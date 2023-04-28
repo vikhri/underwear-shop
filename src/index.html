@@ -6,6 +6,10 @@
 </head>
 <body class="page">
 <header class="page__header">
+  <aside class="top-alert">
+    <p class="top-alert__text"><a class="top-alert__link" href="/">Познакомьтесь с акциями этого месяца от MAYA</a>
+    </p>
+  </aside>
   <div class="header wrapper">
     <a class="header__logo-wrapper" href="/">
       <img class="header__logo logo" width="" height="" alt="Логотип" src="images/logos/logo-white-small.png">
@@ -43,35 +47,31 @@
 </header>
 <main class="page__content">
   <section class="intro">
-    <aside class="top-alert">
-      <p class="top-alert__text"><a class="top-alert__link" href="/">Познакомьтесь с акциями этого месяца от MAYA</a>
-      </p>
-    </aside>
     <div class="intro__slider intro-slider">
       <img class="intro__logo" src="./images/logos/logo-white-388x149.png" width="388" height="149" alt="Логотип">
       <div class="intro-slider__slide">
-        <div class="intro-banner">
-          <img class="intro-banner__background" src="images/banners/intro-banners/underwear.png" width="" height=""
+        <div class="intro-slider__banner">
+          <img class="intro-slider__background" src="images/banners/intro-banners/underwear.png" width="" height=""
                alt="">
-          <p class="intro-banner__title"><a class="intro-banner__link" href="/">Бельё для беременных и кормящих</a></p>
+          <p class="intro-slider__title"><a class="intro-slider__link" href="/">Бельё для беременных и кормящих</a></p>
         </div>
       </div>
-      <div class="intro-slider__slide">
-        <div class="intro-banner">
-          <img class="intro-banner__background" src="images/banners/intro-banners/bandage.png" width="" height=""
+      <div class="intro-slider__slide visually-hidden">
+        <div class="intro-slider__banner">
+          <img class="intro-slider__background" src="images/banners/intro-banners/bandage.png" width="" height=""
                alt="">
-          <p class="intro-banner__title"><a class="intro-banner__link" href="/">Бандаж ДО и ПОСЛЕ родов</a></p>
+          <p class="intro-slider__title"><a class="intro-slider__link" href="/">Бандаж ДО и ПОСЛЕ родов</a></p>
         </div>
       </div>
-      <div class="intro-slider__slide">
-        <div class="intro-banner">
-          <img class="intro-banner__background" src="images/banners/intro-banners/promo-action.png" width="" height=""
+      <div class="intro-slider__slide visually-hidden">
+        <div class="intro-slider__banner">
+          <img class="intro-slider__background" src="images/banners/intro-banners/promo-action.png" width="" height=""
                alt="">
-          <p class="intro-banner__title"><a class="intro-banner__link" href="/"></a></p>
+          <p class="intro-slider__title"><a class="intro-slider__link" href="/"></a></p>
         </div>
       </div>
     </div>
-    <footer class="intro__footer">
+    <footer class="intro__footer wrapper">
       <button class="button button-transparent intro__lang-switcher-button" type="button">
         <p class="intro__lang-switcher-text"> Ru/En</p>
       </button>
@@ -132,34 +132,30 @@
     <h2 class="latest__title">Посмотрите наши новинки
     </h2>
     <ul class="latest__list">
-      <li class="latest__item">
+      <li class="latest__item--50-50">
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="" width="" height="" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-high-panties.png" width="575" height="509" alt="" loading="lazy">
+            <figcaption class="latest-card__text">Легинсы</figcaption>
+          </a>
+        </figure>
+        <figure class="latest-card">
+          <a class="latest-card__link">
+            <img class="latest-card__image" src="images/latest-leggins.png" width="575" height="509" alt="" loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
       </li>
-      <li class="latest__item">
+      <li class="latest__item--25-75">
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="" width="" height="" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-leggins-black.png" width="377" height="514" alt="" loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
-      </li>
-      <li class="latest__item">
         <figure class="latest-card">
           <a class="latest-card__link">
-            <img class="latest-card__image" src="" width="" height="" alt="" loading="lazy">
-            <figcaption class="latest-card__text">Легинсы</figcaption>
-          </a>
-        </figure>
-      </li>
-      <li class="latest__item">
-        <figure class="latest-card">
-          <a class="latest-card__link">
-            <img class="latest-card__image" src="" width="" height="" alt="" loading="lazy">
+            <img class="latest-card__image" src="images/latest-bandage.jpg" width="773" height="514" alt="" loading="lazy">
             <figcaption class="latest-card__text">Легинсы</figcaption>
           </a>
         </figure>
@@ -167,7 +163,7 @@
     </ul>
   </section>
   <aside class="banner banner--coupon">
-    <img class="banner__image" src="" width="" height="" alt="" loading="lazy">
+    <img class="banner__image" src="images/banners/narrow%20banners/narrow-coupon.jpg" width="" height="" alt="" loading="lazy">
     <p class="banner__text">Получи Купон со скидкой 500 рублей
       <wbr>
       на первый заказ
@@ -179,8 +175,8 @@
     <ul class="reviews__list">
       <li class="reviews__item">
         <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="">
-            <source src="" type="">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -189,8 +185,8 @@
       </li>
       <li class="reviews__item">
         <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="">
-            <source src="" type="">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source  type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -199,8 +195,8 @@
       </li>
       <li class="reviews__item">
         <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="">
-            <source src="" type="">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source  type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -209,8 +205,8 @@
       </li>
       <li class="reviews__item">
         <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="">
-            <source src="" type="">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source  type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -219,8 +215,8 @@
       </li>
       <li class="reviews__item">
         <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="">
-            <source src="" type="">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -229,8 +225,8 @@
       </li>
       <li class="reviews__item">
         <div class="review-card">
-          <video class="review-card__video" width="200" height="355" controls="controls" poster="">
-            <source src="" type="">
+          <video class="review-card__video" width="200" height="355" controls="controls" poster="images/reviews/1.png">
+            <source type="">
           </video>
           <p class="review-card__text">
             Анастасия, 35 лет <br> Новосибирск
@@ -272,7 +268,7 @@
     </dl>
   </section>
   <aside class="banner banner--whatsapp">
-    <img class="banner__image" src="" width="" height="" alt="" loading="lazy">
+    <img class="banner__image" src="images/banners/narrow%20banners/narrow-whatsapp.jpg" width="" height="" alt="" loading="lazy">
     <p class="banner__text">Не нашли ответ на свой вопрос?</p>
     <p class="banner__text--secondary">Задайте его нам в WhatsApp</p>
     <button class="banner__button button" type="button">Спросить в WhatsAPP</button>
@@ -296,17 +292,17 @@
       <li class="socials__list">
       <li class="socials__item">
         <a class="socials__link">
-          <img class="socials__icon" src="" width="" height="" alt="" loading="lazy">
+          <img class="socials__icon" src="images/icons/instagram-icon.svg" width="" height="" alt="" loading="lazy">
         </a>
       </li>
       <li class="socials__item">
         <a class="socials__link">
-          <img class="socials__icon" src="" width="" height="" alt="" loading="lazy">
+          <img class="socials__icon" src="images/icons/youtube-icon.svg" width="" height="" alt="" loading="lazy">
         </a>
       </li>
       <li class="socials__item">
         <a class="socials__link">
-          <img class="socials__icon" src="" width="" height="" alt="" loading="lazy">
+          <img class="socials__icon" src="images/icons/telegram-icon.svg" width="" height="" alt="" loading="lazy">
         </a>
       </li>
     </ul>
