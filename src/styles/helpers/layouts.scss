@@ -37,6 +37,13 @@ html {
   overflow: hidden;
 }
 
+.input {
+  background-color: var(--input-background);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
 /* clears the ‘X’ from Internet Explorer */
 input[type=search]::-ms-clear {
   display: none;

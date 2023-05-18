@@ -32,7 +32,8 @@
   },
   "dependencies": {
     "browserslist": "^4.21.5",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "nouislider": "^15.7.0"
   },
   "browserslist": [
     "last 1 version",

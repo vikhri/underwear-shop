@@ -1,0 +1,89 @@
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100px 1fr;
+  row-gap: 30px;
+  column-gap: 48px;
+  width: 100%;
+  height: 100%;
+
+ &__toolbar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+&__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 50px;
+}
+
+
+&__categories {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  list-style: none;
+}
+}
+
+
+
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+
+  &__price,
+  &__size {
+    border: none;
+  }
+
+  &__size {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+
+  &__cb-label {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  &__checkbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--input-background);
+    padding: 2px;
+  }
+
+  &__checkbox-mark {
+    color: grey;
+    display: none;
+
+  }
+}
+
+.filters__checkbox-input:checked ~ * .filters__checkbox-mark{
+  display: block;
+}
+
+
+.slider {
+  width: 200px;
+}

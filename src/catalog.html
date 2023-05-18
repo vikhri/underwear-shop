@@ -46,15 +46,15 @@
   </div>
 </header>
 <main class="page__content">
-  <section class="catalog">
+  <section class="catalog wrapper">
     <h1 class="catalog__title section-title">Каталог</h1>
     <div class="catalog__toolbar">
       <div class="catalog__toolbar-wrap">
-        <label aria-label="Поиск"><input class="catalog__input" type="search" placeholder="Поиск"></label>
+        <label aria-label="Поиск"><input class="catalog__input input" type="search" placeholder="Поиск"></label>
       </div>
       <div class="catalog__toolbar-wrap">
         <label aria-label="Сортировка">
-          <select class="catalog__sort">
+          <select class="catalog__sort input">
             <option class="catalog__sort-option">По умолчанию</option>
             <option class="catalog__sort-option">В начале дешевые</option>
             <option class="catalog__sort-option">В начале дорогие</option>
@@ -71,27 +71,34 @@
       <form class="catalog__filters filters">
         <fieldset class="filters__price">
           <p class="filters__title">Цена</p>
-          <label class="filters__label" for="price"><input class="filters__range-input" type="range" id="price"
-                                                           name="price" min="10" max="10000"></label>
+          <div id="slider"></div>
           <div class="filters__range-outputs">
-            <output class="filters__range-output">До</output>
-            <output class="filters__range-output">После</output>
+            <input class="filters__range-input input" id="js-price-from"  type="number" placeholder="C">
+            <input class="filters__range-input input" id="js-price-to" type="number" placeholder="До">
           </div>
         </fieldset>
         <fieldset class="filters__size">
           <p class="filters__title">Размер</p>
-          <label class="filters__label"><span class="filters__checkbox-box"></span><span>XS</span> <input
-             class="filters__checkbox-input" name="XS" type="checkbox" ></label>
-          <label class="filters__label"><span class="filters__checkbox-box"></span><span>S</span> <input
-              class="filters__checkbox-input" name="S" type="checkbox" ></label>
-          <label class="filters__label"><span class="filters__checkbox-box"></span><span>M</span> <input
-              class="filters__checkbox-input" name="M" type="checkbox" ></label>
-          <label class="filters__label"><span class="filters__checkbox-box"></span><span>L</span> <input
-              class="filters__checkbox-input" name="L" type="checkbox" ></label>
-          <label class="filters__label"><span class="filters__checkbox-box"></span><span>XL</span> <input
-              class="filters__checkbox-input" name="XL" type="checkbox" ></label>
+          <label class="filters__cb-label">
+            <input
+             class="visually-hidden filters__checkbox-input" name="XS" type="checkbox" >
+            <span class="filters__checkbox-box "><span class="filters__checkbox-mark">✓</span></span>
+            <span>XS</span>
+          </label>
+          <label class="filters__cb-label"><input
+              class="visually-hidden filters__checkbox-input" name="S" type="checkbox">
+            <span class="filters__checkbox-box "><span class="filters__checkbox-mark">✓</span></span><span>S</span> </label>
+          <label class="filters__cb-label"> <input
+              class="visually-hidden filters__checkbox-input" name="M" type="checkbox" ><span class="filters__checkbox-box"><span class="filters__checkbox-mark">✓</span></span><span>M</span></label>
+          <label class="filters__cb-label"> <input
+              class="visually-hidden filters__checkbox-input" name="L" type="checkbox" ><span class="filters__checkbox-box"><span class="filters__checkbox-mark">✓</span></span><span>L</span></label>
+          <label class="filters__cb-label"> <input
+              class="visually-hidden filters__checkbox-input" name="XL" type="checkbox" ><span class="filters__checkbox-box"><span class="filters__checkbox-mark">✓</span></span><span>XL</span></label>
         </fieldset>
       </form>
+    </div>
+    <div class="catalog__product-cards">
+
     </div>
 
   </section>
