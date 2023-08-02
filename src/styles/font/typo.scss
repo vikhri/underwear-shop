@@ -37,32 +37,34 @@
 
 h1 {
   @include light-font;
-  @include fluid-text(48, 24, 360, 1920);
+  @include fluid-text(24, 48, 360, 1920);
   text-transform: uppercase;
 }
 
 h2 {
   @include light-font;
-  @include fluid-text(40, 18, 360, 1920);
+  @include fluid-text(18, 40, 360, 1920);
   text-transform: uppercase;
 }
 
 h3 {
   @include bold-font;
-  @include fluid-text(32, 16, 360, 1920);
+  @include fluid-text(16, 32, 360, 1920);
 }
 
 h4 {
   @include bold-font;
-  @include fluid-text(20, 14, 360, 1920);
+  @include fluid-text(14, 20, 360, 1920);
 }
 
 h5 {
   @include bold-font;
-  @include fluid-text(18, 14, 360, 1920);
+  @include fluid-text(14, 18, 360, 1920);
 }
 
 h6 {
   @include bold-font;
-  @include fluid-text(18, 14, 360, 1920);
+  @include fluid-text(14, 18, 360, 1920);
 }
+
+

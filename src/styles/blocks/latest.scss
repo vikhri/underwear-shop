@@ -33,11 +33,33 @@
 }
 
 .latest-card {
+  position: relative;
   display: block;
   border-radius: 20px;
 
   &__image {
+    width: 100%;
     object-fit: cover;
+
+    border-radius: 20px;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+
+    height: 5%;
+
+    padding: 20px;
+
+    font-size: 20px;
+    color: var(--main-font-bright-color);
+    text-transform: uppercase;
+
+    &--dark {
+      color: var(--main-font-color);
+    }
   }
 
 }

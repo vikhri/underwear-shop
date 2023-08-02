@@ -13,6 +13,10 @@ a {
   color: inherit;
   text-decoration: inherit;
   line-height: 0;
+
+  &:hover {
+    opacity: 50%;
+  }
 }
 
 html {
@@ -20,7 +24,7 @@ html {
 }
 
 .wrapper {
-  padding: 0 135px;
+  padding: 0 8vw;
 }
 
 .visually-hidden {
@@ -63,4 +67,33 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 36px;
+
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  color: var(--main-font-bright-color);
+  text-transform: uppercase;
+
+
+
+
+
+  &--transparent {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+  }
+  p {
+    color: var(--main-font-bright-color);
+  }
 }
