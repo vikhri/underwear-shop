@@ -33,4 +33,13 @@
     justify-content: space-between;
   }
 
+  &__answer {
+    display: none;
+    margin-top: 40px;
+  }
+
+  }
+
+.visible {
+  display: block;
 }

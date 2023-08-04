@@ -23,4 +23,18 @@
     margin: 55px 0 64px;
 
   }
+
+  &__link {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &--footer {
+      color: #4D4D4D;
+      font-family: Montserrat;
+      font-weight: 500;
+    }
+  }
+
 }

@@ -13,15 +13,22 @@
     align-items: center;
   }
 
+
+
   &__bottom-text {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    & p {
+      color: #4D4D4D;
+    }
   }
 
+
   &__subscription {
-    margin-bottom: 115px;
+    margin-bottom: 157px;
   }
 }
 
@@ -32,6 +39,11 @@
   text-align: right;
 }
 
+.bottom-text__phone {
+  &:hover {
+    opacity: 50%;
+  }
+}
 
 .subscription {
 
@@ -43,12 +55,34 @@
   }
 
   &__input-block {
-
-    width: 30vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     column-gap: 30px;
+    column-gap: 37px;
+  }
+
+  &__label {
+    margin-bottom: 25px;
+    color: rgba(77, 77, 77, 0.50);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    width: 25vw;
+    max-width: 362px;
+    min-width: 200px;
+    border: 1px solid grey;
+    border-radius: 10px;
   }
 }
